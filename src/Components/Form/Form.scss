@@ -1,0 +1,42 @@
+$backgroundimage: url("https://images.pling.com/img/00/00/62/69/92/1720243/cool-website-background-041.jpg");
+
+body {
+    background-image: $backgroundimage;
+}
+.form {
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 25px 25px 25px;
+    
+}
+  
+  .title {
+    padding: 10px;
+  }
+
+  .subject {
+    padding: 10px;
+  }
+
+  .article {
+    padding: 10px;
+  }
+.button {
+    padding: 10px
+}
+
+.button:hover {
+  background-color: rgb(44, 135, 56);
+  color: black;
+}
+.message {
+  height: 100px;
+}
+.contact {
+    text-align: center;
+    color: azure;
+    font-size: 300%;
+}

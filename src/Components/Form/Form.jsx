@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-//import "./Form.css";
+import "./Form.scss";
 
 export const NewsForm = () => {
   const [data, setData] = useState({
@@ -70,39 +70,41 @@ export const NewsForm = () => {
   }
 
   return (
-    <form className="form" onSubmit={handleSubmit}>
-      <h1 className="contact">Add your own news article</h1>
-      <input
-        className="title"
-        type="text"
-        placeholder="title"
-        value={data.title}
-        onChange={handleInputChange}
-        name="title"
-      />
+    <>
+      <form className="form" onSubmit={handleSubmit}>
+        <h1 className="contact">Add your own news article</h1>
+        <input
+          className="title"
+          type="text"
+          placeholder="title"
+          value={data.title}
+          onChange={handleInputChange}
+          name="title"
+        />
 
-      <input
-        className="subject"
-        type="text"
-        placeholder="subject"
-        value={data.subject}
-        onChange={handleInputChange}
-        name="subject"
-      />
-      <input
-        className="message"
-        type="textarea"
-        placeholder="write your article here"
-        value={data.article}
-        onChange={handleInputChange}
-        name="article"
-      />
+        <input
+          className="subject"
+          type="text"
+          placeholder="subject"
+          value={data.subject}
+          onChange={handleInputChange}
+          name="subject"
+        />
+        <input
+          className="message"
+          type="textarea"
+          placeholder="write your article here"
+          value={data.article}
+          onChange={handleInputChange}
+          name="article"
+        />
 
-      <button className="button" type="submit" disabled={btnDisabled}>
-        Submit
-      </button>
-      {message}
-    </form>
+        <button className="button" type="submit" disabled={btnDisabled}>
+          Submit
+        </button>
+        {message}
+      </form>
+    </>
   );
 };
 export default NewsForm;
