@@ -24,7 +24,7 @@ export const NewsForm = () => {
   };
 
   const handleInputChange = (event) => {
-    if (data.name.length + 1 < 3) {
+    if (data.title.length + 1 < 3) {
       setMessage("You need to fill out more information");
       setBtnDisabled(true);
     } else {
@@ -33,13 +33,13 @@ export const NewsForm = () => {
     }
     setData({
       ...data,
-      [event.target.title]: event.target.value,
+      [event.target.name]: event.target.value,
     });
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("sending data..." + data.name + " " + data.email);
+    console.log("sending data..." + data.title + " " + data.subject);
     saveResults(data);
     clearState();
     setMessage("News article added");
@@ -47,6 +47,27 @@ export const NewsForm = () => {
       navigate("/");
     }, 3000);
   };
+
+  function getSavedData() {
+    const usersDb = localStorage.getItem("results"); //traemos la informacion del local storage a un var
+    const dataArray = JSON.parse(usersDb) || [];
+    // const  Object.entries(dataObject); //creating var to store. necessary step to translate to js
+    return dataArray;
+  }
+  getSavedData();
+  function saveResults(data) {
+    const database = {
+      title: data.title,
+      subject: data.subject,
+      article: data.article,
+    }; //the result of a function saved in a variable
+
+    const lc = getSavedData();
+    const ls = lc.push(database);
+    console.log("this is lc ", lc);
+    localStorage.setItem("results", JSON.stringify(lc)); //pushing infoOfUsers to database array
+    //localStorage.setItem("results", JSON.stringify(database)); // puts data back into local storage
+  }
 
   return (
     <form className="form" onSubmit={handleSubmit}>
@@ -85,24 +106,3 @@ export const NewsForm = () => {
   );
 };
 export default NewsForm;
-
-function getSavedData() {
-  const usersDb = localStorage.getItem("results"); //traemos la informacion del local storage a un var
-  const dataArray = JSON.parse(usersDb) || [];
-  // const  Object.entries(dataObject); //creating var to store. necessary step to translate to js
-  return dataArray;
-}
-getSavedData();
-function saveResults(data) {
-  const database = {
-    name: data.name,
-    email: data.email,
-    message: data.message,
-  }; //the result of a function saved in a variable
-
-  const lc = getSavedData();
-  const ls = lc.push(database);
-  console.log("this is lc ", lc);
-  localStorage.setItem("results", JSON.stringify(lc)); //pushing infoOfUsers to database array
-  //localStorage.setItem("results", JSON.stringify(database)); // puts data back into local storage
-}
