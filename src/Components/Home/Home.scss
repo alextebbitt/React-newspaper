@@ -1,0 +1,15 @@
+.image-container {
+    display: flex;
+    
+}
+.image {
+    max-width: 40%;
+    max-height: 30%;
+    border-radius: 50%;
+}
+.text {
+    font-size: 200%;
+    font-weight: 400;
+    color: aliceblue;
+    margin-left: 20px;
+}

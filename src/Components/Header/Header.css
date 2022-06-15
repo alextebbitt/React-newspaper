@@ -5,7 +5,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 /* Style the links inside the navigation bar */
@@ -31,6 +31,6 @@
 }
 .Reactnews {
     color: aliceblue;
-    float: left;
-    padding-right: 250px;
+    margin-left: 50px;
+   
 }
