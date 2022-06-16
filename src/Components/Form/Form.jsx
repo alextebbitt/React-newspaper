@@ -73,7 +73,7 @@ export const NewsForm = () => {
     <>
       <form className="form" onSubmit={handleSubmit}>
         <h1 className="contact">Add your own news article</h1>
-        <input
+        <input 
           className="title"
           type="text"
           placeholder="title"

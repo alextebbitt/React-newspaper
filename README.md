@@ -1,76 +1,53 @@
-# Getting Started with Create React App
+## introduction
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React is a JavaScript library that makes it easy to create interactive user interfaces. It is an open source library built by Facebook and is one of the most widely used libraries for building web applications. I am currently learning about this and this is a little project that has helped me developed my skills.
 
-## Available Scripts
+## What are the main objectives of this project?
+Understand how to develop an app with React
+Improve your web development skills
+Improve your JavaScript development skills
+Learn to use Context
 
-In the project directory, you can run:
+## Newspaper API
 
-### `npm start`
+Minimum components:
+Header, Home, Form, footer.
+News registration form.
+Save form in local storage.
+After registering you must redirect to ListNews.
+ListNews. paint the news.
+The design is important.
+Use context.
+Use SASS.
+Make it responsive.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Screenshots
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### React
+This has been made using react
 
-### `npm test`
+![React](./src/assets/react.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Sass
+I have been working using Sass. This is the first time I have implemented Sass into one of my projects.
 
-### `npm run build`
+![Sass logo](./src/assets/sass.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Screenshots
+Screenshot of the form which will create a news article.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Form](./src/assets/Screenshot%202022-06-16%20123048.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Postman
 
-### `npm run eject`
+![Postman Image](./assests/Screenshot%202022-06-04%20005231.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Screenshot of the news API .  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![News API](./src/assets/newsscreenshot.png)
 
 
-## Grateful
+## Thanks to
 
 I want to thank our teachers for their help and pacience with me during this time working on this project.
  [Sofia](https://github.com/SofiaPinilla),[Ger](https://github.com/GeerDev),[Iván](https://github.com/ivanpuebla10)

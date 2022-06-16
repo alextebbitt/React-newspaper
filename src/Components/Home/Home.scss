@@ -1,15 +1,27 @@
 .image-container {
     display: flex;
+    border-style: solid;
+    border-color: aliceblue;
+    size-adjust: 50%;
     
 }
 .image {
-    max-width: 40%;
+    max-width: 30%;
     max-height: 30%;
     border-radius: 50%;
 }
 .text {
-    font-size: 200%;
+    font-size: 100%;
     font-weight: 400;
     color: aliceblue;
     margin-left: 20px;
+}
+.image-textbox {
+    max-height: 170px;
+    min-height: 170px;
+    
+    margin-left: 20px;
+}
+.image-textbox:hover {
+    image-orientation: flip;
 }
