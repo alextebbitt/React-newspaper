@@ -7,6 +7,7 @@ export const NewsForm = () => {
     title: "",
     subject: "",
     article: "",
+    file: "",
   });
 
   const [btnDisabled, setBtnDisabled] = useState(true);
@@ -17,6 +18,7 @@ export const NewsForm = () => {
     title: "",
     subject: "",
     article: "",
+    file: "",
   };
 
   const clearState = () => {
@@ -60,6 +62,7 @@ export const NewsForm = () => {
       title: data.title,
       subject: data.subject,
       article: data.article,
+      file: data.file
     }; //the result of a function saved in a variable
 
     const lc = getSavedData();
@@ -73,19 +76,18 @@ export const NewsForm = () => {
     <>
       <form className="form" onSubmit={handleSubmit}>
         <h1 className="contact">Add your own news article</h1>
-        <input 
+        <input
           className="title"
           type="text"
-          placeholder="title"
+          placeholder="Title"
           value={data.title}
           onChange={handleInputChange}
           name="title"
         />
-
         <input
           className="subject"
           type="text"
-          placeholder="subject"
+          placeholder="Subject"
           value={data.subject}
           onChange={handleInputChange}
           name="subject"
@@ -93,10 +95,19 @@ export const NewsForm = () => {
         <input
           className="message"
           type="textarea"
-          placeholder="write your article here"
+          placeholder="Write your article here"
           value={data.article}
           onChange={handleInputChange}
           name="article"
+        />
+
+        <input
+          className="file"
+          type="file"
+          value={data.file}
+          onChange={handleInputChange}
+          name="upload"
+          
         />
 
         <button className="button" type="submit" disabled={btnDisabled}>

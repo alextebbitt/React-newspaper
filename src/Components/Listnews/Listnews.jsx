@@ -21,6 +21,7 @@ const News = () => {
             <a target="_blank" className="link" href={newsItem.url}>
               Read more
             </a>
+            <p> {newsItem.multimedia.copyright} copyright</p>
           </div>
         </div>
       </>
